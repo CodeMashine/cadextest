@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3rem;
+
+  &_inner {
+    display: flex;
+    flex-direction: column;
+  }
+  &_inputs {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 20%;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  &_canvasBlock {
+    height: 600px;
+    background-color: black;
+  }
+}
