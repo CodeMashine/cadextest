@@ -1,5 +1,4 @@
-// import * as THREE from 'three';
-import THREE from 'three';
+import * as THREE from 'three';
 
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import ElementCreator from './ElementCreator';

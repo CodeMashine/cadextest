@@ -4,17 +4,12 @@ const path = require('path');
 // const nodeExternals = require('webpack-node-externals');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-// const {
-//     NODE_ENV = 'production',
-// } = process.env;
 
 module.exports = {
-    // entry: './src/server.ts',
     entry: {
         client: './src/client/scripts/index.ts',
         server: './src/server.ts',
     },
-    // mode: NODE_ENV,
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: '[name].js'

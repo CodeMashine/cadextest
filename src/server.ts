@@ -1,6 +1,7 @@
-import express from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
+/* eslint-disable @typescript-eslint/no-var-requires */
+const express = require('express');
+const path = require('path');
+const bodyParser = require('body-parser');
 
 import { Request, Response } from 'express';
 
@@ -48,10 +49,6 @@ app.use(express.static(staticPath), (req: Request, res: Response) => {
   const coords = triangulation(+segments, +radius, +height);
   res.send(JSON.stringify(coords));
 });
-
-// app.get('/', (req: Request, res: Response) => {
-//   res.send('test');
-// });
 
 app.listen(PORT, (): void => {
   console.log(`server is started at ${PORT}`);
